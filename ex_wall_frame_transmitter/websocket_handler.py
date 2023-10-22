@@ -14,9 +14,9 @@ class WebsocketTransmitter:
         self._thread = None
 
     def start(self):
+        self._running = True
         self._thread = Thread(target=self._websocket_thread)
         self._thread.start()
-        self._running = True
 
     def stop(self):
         self._running = False
