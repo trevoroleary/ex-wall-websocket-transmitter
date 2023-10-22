@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "ex-wall-frame-transmitter"
+version = "0.1.0"
+description = "Library for sending image frames to the ex-wall over local network"
+authors = ["Trevor O'Leary <git@trevoroleary.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "<3.12,>=3.9"
+numpy = "^1.26.1"
+websockets = "^12.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
